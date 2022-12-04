@@ -7,7 +7,7 @@ import java.io.IOException;
 public class WrappingPaper {
 
     public static void main(String[] args) throws IOException {
-        String data = SharedUtils.loadDataFromInput("year2015.day02/input.txt");
+        String data = SharedUtils.loadDataFromInput("year2015/day02/input.txt");
 
         String[] presents = data.split("\n");
         int amountOfPaper = 0;

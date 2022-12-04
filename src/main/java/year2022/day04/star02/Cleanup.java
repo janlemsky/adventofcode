@@ -5,7 +5,7 @@ import utils.SharedUtils;
 public class Cleanup {
 
     public static void main(String[] args) {
-        String data = SharedUtils.loadDataFromInput("year2022.day04/input.txt");
+        String data = SharedUtils.loadDataFromInput("year2022/day04/input.txt");
 
         String[] pairs = data.split("\n");
 

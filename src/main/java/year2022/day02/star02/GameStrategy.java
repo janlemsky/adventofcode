@@ -5,7 +5,7 @@ import utils.SharedUtils;
 public class GameStrategy {
 
     public static void main(String[] args) {
-        String data = SharedUtils.loadDataFromInput("year2022.day02/input.txt");
+        String data = SharedUtils.loadDataFromInput("year2022/day02/input.txt");
 
         int totalScore = 0;
         String[] rounds = data.split("\n");

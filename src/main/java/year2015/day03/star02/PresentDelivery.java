@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class PresentDelivery {
 
     public static void main(String[] args) {
-        String data = SharedUtils.loadDataFromInput("year2015.day03/input.txt");
+        String data = SharedUtils.loadDataFromInput("year2015/day03/input.txt");
 
         HashMap<Key, Integer> deliveries = new HashMap<>();
 

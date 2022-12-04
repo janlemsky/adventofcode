@@ -7,7 +7,7 @@ import java.io.IOException;
 public class StairCounter {
 
     public static void main(String[] args) throws IOException {
-        String data = SharedUtils.loadDataFromInput("year2015.day01/input.txt");
+        String data = SharedUtils.loadDataFromInput("year2015/day01/input.txt");
 
         int result = 0;
         int firstDown = -1;

@@ -11,7 +11,7 @@ import java.util.List;
 public class ElfCalculator {
 
     public static void main(String[] args) throws IOException {
-        String data = SharedUtils.loadDataFromInput("year2022.day01/input.txt");
+        String data = SharedUtils.loadDataFromInput("year2022/day01/input.txt");
 
         List<Integer> elfCalories = new ArrayList<>();
         for(String elf : data.split("\n\n")) {
