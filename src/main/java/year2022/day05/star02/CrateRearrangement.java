@@ -1,8 +1,11 @@
-package year2022.day05.star01;
+package year2022.day05.star02;
 
 import utils.SharedUtils;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Stack;
 
 public class CrateRearrangement {
 
@@ -56,8 +59,13 @@ public class CrateRearrangement {
             int[] commands = Arrays.stream(move.split(" ")).mapToInt(Integer::parseInt).toArray();
 
             Stack<Character> stack = stacks.get(commands[1] - 1);
+
+            Stack<Character> stackToMove = new Stack<>();
             for(int i = 0; i < commands[0]; ++i) {
-                stacks.get(commands[2] - 1).add(stack.pop());
+                stackToMove.add(stack.pop());
+            }
+            while(!stackToMove.isEmpty()) {
+                stacks.get(commands[2] - 1).add(stackToMove.pop());
             }
         }
     }
